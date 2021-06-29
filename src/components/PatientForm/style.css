@@ -1,0 +1,66 @@
+.patient__form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px;
+}
+
+.patient__form_container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.patient__form > div {
+    margin-bottom: 20px;
+}
+
+.bd_sex__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.send_sms__container{
+    display: inline-flex;
+    align-items: center;
+}
+.phone__container{
+    grid-column: span 2 / auto;
+}
+
+@media screen and (max-width: 600px){
+    .bd_sex__container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .phone__container{
+        grid-column: 1;
+    }
+}
+.header{
+    text-align: start;
+}
+
+
+@media screen and (min-width: 900px){
+    .bd_sex__container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .phone__container{
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .patient__form_container {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 400px){
+    .patient__form_container {
+        width: 100%;
+    }
+}
